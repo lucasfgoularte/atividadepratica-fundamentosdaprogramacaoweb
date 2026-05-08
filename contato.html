@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">  <!-- link css -->
+    <style>
+      p {text-align: justify;}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Lucas Ferreira Goularte</h1>  <!-- Titulo -->
+    <nav> 
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="formacao.html">Formação</a>      <!-- Menu com links principais -->
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+     <img src="imagens/banner5.jpg" alt="Banner de contato com elementos tecnológicos" class="imagem-topo"> <!-- Imagem abaixo do menu -->
+     <div class="caixa-texto">
+        <section class="card">
+          <h2>Vamos conversar?</h2>   
+          <p>Estou sempre em busca de novas conexões e oportunidades na área de <strong>Ciência de Dados e Tecnologia</strong>. Se você tem interesse em trocar ideias sobre análise de dados, projetos educacionais ou propostas profissionais, sinta-se à vontade para entrar em contato através dos canais abaixo:</p>
+
+          <ul class="lista-contato">   <!-- Informações de contato -->
+          <li><strong>Email:</strong> lucasgoularte@gmail.com</li>
+          <li><strong>Telefone:</strong> (31) 98765-4321</li>
+          <li><strong>Linkedin:</strong> <a href="https://linkedin.com/in/lucasgoularte" target="_blank">linkedin.com/in/lucasgoularte</a></li>
+          <li><strong>Localização:</strong> Belo Horizonte/MG </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <p>Se preferir, preencha o formulário abaixo com seus dados e mensagem. Responderei o mais breve possível para iniciarmos uma conversa.</p>
+
+            <!-- Caixa para preenchimento de informações para entrar em contato -->
+
+          <form class="form-contato" id="form-contato">   
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Como posso te ajudar?"></textarea>
+
+    <button type="submit">Enviar Mensagem</button>  
+</form>
+
+<!-- Script de Validação e Simulação -->
+<script>
+    const formulario = document.getElementById('form-contato');
+
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o recarregamento da página
+
+        // Captura os valores
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+
+        // Validação extra (além do 'required' do HTML5)
+        if (nome === "" || email === "" || mensagem === "") {
+            alert("Por favor, preencha todos os campos obrigatórios.");
+            return;
+        }
+
+        // Simulação de envio
+        console.log("Enviando dados:", { nome, email, mensagem });
+        
+        alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso (Simulação).`);
+
+        // Limpa o formulário após o envio
+        formulario.reset();
+    });
+</script>
+        </section>
+      </div>
+  </main>
+  <footer>
+    <p>Lucas Goularte - Futuro Cientista de Dados</p>   <!-- Rodapé -->
+  </footer>
+</body>
+</html> 

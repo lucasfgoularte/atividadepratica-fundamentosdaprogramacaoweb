@@ -1,0 +1,159 @@
+body {   /* Estilos gerais do site */
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif;  
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+   line-height: 1.6; 
+}
+  
+header {  /* Cabeçalho do site */
+  background-color: #1B263B;
+  color: #E0E1DD;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {  /* Links do menu */
+  color: #E0E1DD;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+nav a:hover {  /* Efeito ao passar o mouse nos links do menu */
+  color: #778DA9;
+  text-decoration: underline;
+}
+
+main { 
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+footer { /* Rodapé da página */
+  background-color: #1B263B;
+  color: #E0E1DD;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {  /* Efeitos nos títulos */
+  border: none; 
+  padding: 10px 20px;       
+  display: inline-block;     
+  color: #E0E1DD;
+  background-color: #1B263B;
+  border-radius: 0;         
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.caixa-texto {
+  background-color: #778DA9;
+  border: none;
+  padding: 20px; 
+  width: 90%;
+  max-width: 1000px;
+  color: #f4f7f6;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+.imagem-topo {  /* Imagem no topo da página */
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
+
+.titulo-fotos {  /* Título das fotos */
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.fotos {  
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+.fotos img { /* Estilo das imagens da galeria */
+  width: 300px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.fotos img:hover {  /* Efeito de zoom nas imagens ao passar o mouse */
+  transform: scale(1.05); 
+}
+
+.lista-contato {   /* Lista de contatos */
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lista-contato li {
+  margin-bottom: 10px;
+}
+
+.lista-contato a {
+  color: #1B263B;
+  text-decoration: none;
+}
+
+.lista-contato a:hover {
+  text-decoration: underline;
+}
+.form-contato {  /* Campos de entrada e área de texto do formulário de contato */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.form-contato label {
+  font-weight: bold;
+}
+
+
+.form-contato button {  /* Botão de envio do formulário */
+  background-color: #1B263B;
+  color: #E0E1DD;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #415A77;
+}
